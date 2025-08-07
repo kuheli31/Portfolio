@@ -11,13 +11,10 @@ function Page1() {
         <li></li><li></li><li></li><li></li><li></li>
       </ul>
 
-      {/* Overlay content */}
-      <div className="relative text-white text-center pt-5 pb-5">
-        <Header/>
+      <div className="relative z-10 text-white"> 
+        <Profile />
       </div>
-      <div className="relative bg-transparent text-white"> 
-        <Profile/>
-      </div>
+      
     </div>
   );
 }
