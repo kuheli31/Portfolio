@@ -68,23 +68,30 @@ export default function Header() {
           </div>
 
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <button className="cssbuttons-io-button">
-              Resume
-              <div className="icon">
-                <svg
-                  height="28"
-                  width="15"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0 0h24v24H0z" fill="none"></path>
-                  <path
-                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-              </div>
-            </button>
+            <a
+  href="https://drive.google.com/file/d/1anjssRhFv08BZjTHOJEtViX-Rh8fU9h4/view?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className="cssbuttons-io-button">
+    Resume
+    <div className="icon">
+      <svg
+        height="28"
+        width="15"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path
+          d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </div>
+  </button>
+</a>
+
           </div>
         </div>
       </div>
