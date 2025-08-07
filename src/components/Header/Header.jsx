@@ -90,26 +90,29 @@ export default function Header() {
       </div>
 
       <DisclosurePanel className="sm:hidden">
-        <div className="space-y-1 px-2 pt-2 pb-3">
-          {navigation.map((item) => (
-            <NavLink
-              key={item.name}
-              to={item.href}
-              className={({ isActive }) =>
-                classNames(
-                  isActive
-                    ? "bg-gray-900 text-white"
-                    : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                  "block rounded-md px-3 py-2 text-base font-medium"
-                )
-              }
-              end
-            >
-              {item.name}
-            </NavLink>
-          ))}
-        </div>
-      </DisclosurePanel>
+  {({ close }) => (
+    <div className="space-y-1 px-2 pb-3 pt-2">
+      {navigation.map((item) => (
+        <NavLink
+          key={item.name}
+          to={item.href}
+          onClick={() => close()} // Close menu on click
+          className={({ isActive }) =>
+            classNames(
+              isActive
+                ? "bg-gray-900 text-white"
+                : "text-gray-300 hover:bg-gray-700 hover:text-white",
+              "block rounded-md px-3 py-2 text-base font-medium"
+            )
+          }
+        >
+          {item.name}
+        </NavLink>
+      ))}
+    </div>
+  )}
+</DisclosurePanel>
+
     </Disclosure>
   );
 }
